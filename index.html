@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team_Task_Manager</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- AUTH -->
+  <section id="authSection" class="auth">
+    <div class="auth-box">
+      <h2>Team Task Manager</h2>
+
+      <div id="signupForm">
+        <input id="signupName" placeholder="Full Name"/>
+        <input id="signupEmail" type="email" placeholder="Email"/>
+        <input id="signupPass" type="password" placeholder="Password"/>
+        <button onclick="signup()">Create Account</button>
+        <p onclick="showLogin()">Already have an account?</p>
+      </div>
+
+      <div id="loginForm" style="display:none">
+        <input id="loginEmail" type="email" placeholder="Email"/>
+        <input id="loginPass" type="password" placeholder="Password"/>
+        <button onclick="login()">Login</button>
+        <p onclick="showSignup()">New here? Sign up</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="taskSection" class="dashboard" style="display:none">
+
+    <aside class="sidebar">
+      <h2>Team Task Manager</h2>
+      <p id="userName"></p>
+      <button onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="main">
+      <div class="stats">
+        <div><span>Total</span><h3 id="totalTasks">0</h3></div>
+        <div><span>Completed</span><h3 id="completedTasks">0</h3></div>
+        <div><span>Overdue</span><h3 id="overdueTasks">0</h3></div>
+      </div>
+
+      <div class="progress">
+        <div id="progressFill"></div>
+      </div>
+
+      <form class="task-form" onsubmit="addTask(event)">
+        <input id="taskTitle" placeholder="Task Title" required/>
+        <input id="taskAssignee" placeholder="Assign To" required/>
+        <input id="taskDueDate" type="date" required/>
+        <select id="taskStatus">
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+          <option>Overdue</option>
+        </select>
+        <button>Add Task</button>
+      </form>
+
+      <div class="filters">
+        <select id="filterStatus" onchange="renderTasks()">
+          <option value="All">All</option>
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+          <option>Overdue</option>
+        </select>
+        <input id="filterAssignee" placeholder="Search assignee" oninput="renderTasks()"/>
+      </div>
+
+      <div id="taskList" class="tasks"></div>
+    </main>
+
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
