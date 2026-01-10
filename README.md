@@ -81,7 +81,7 @@ It supports user authentication, task assignment, status tracking, and real-time
 
 ### Completed Tasks View
 
-<img width="1362" height="652" alt="image" src="https://github.com/"C:\Users\puneeth\OneDrive\Desktop\AV\1.png"" />
+<img width="1362" height="652" alt="image" src="https://github.com/user-attachments/assets/b8ee8bf0-15b3-4fa2-b219-b5d9d0b12e05" />
 
 ### Delete Task View
 <img width="1352" height="635" alt="image" src="https://github.com/user-attachments/assets/dc2f7aba-700b-4c62-ab0a-3c857778779a" />
