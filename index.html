@@ -44,8 +44,8 @@
     <main class="main">
       <div class="stats">
         <div><span>Total</span><h3 id="totalTasks">0</h3></div>
-        <div><span>Completed</span><h3 id="completedTasks">0</h3></div>
         <div><span>Overdue</span><h3 id="overdueTasks">0</h3></div>
+        <div><span>Completed</span><h3 id="completedTasks">0</h3></div>
       </div>
 
       <div class="progress">
@@ -53,10 +53,11 @@
       </div>
 
       <form class="task-form" onsubmit="addTask(event)">
-        <input id="taskTitle" placeholder="Task Title" required/>
         <input id="taskAssignee" placeholder="Assign To" required/>
+        <input id="taskTitle" placeholder="Task Title" required/>
         <input id="taskDueDate" type="date" required/>
         <select id="taskStatus">
+          <option>Select Option</option>
           <option>Pending</option>
           <option>In Progress</option>
           <option>Completed</option>
@@ -71,9 +72,8 @@
           <option>Pending</option>
           <option>In Progress</option>
           <option>Completed</option>
-          <option>Overdue</option>
         </select>
-        <input id="filterAssignee" placeholder="Search assignee" oninput="renderTasks()"/>
+        <input id="filterAssignee" placeholder="Task Assigned" oninput="renderTasks()"/>
       </div>
 
       <div id="taskList" class="tasks"></div>
