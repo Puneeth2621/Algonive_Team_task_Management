@@ -15,16 +15,16 @@ It supports user authentication, task assignment, status tracking, and real-time
 ###  Dashboard Overview
 
 * Total Tasks count
-* Completed Tasks count
 * Overdue Tasks count
+* Completed Tasks count
 * Visual progress indicator for task completion
 
 ###  Task Management
 
 * Add new tasks with:
 
-  * Task Title
   * Assigned User
+  * Task Title
   * Due Date
   * Status (Pending / In Progress / Completed)
 * Edit existing tasks
@@ -57,4 +57,5 @@ It supports user authentication, task assignment, status tracking, and real-time
 * CSS3 (Modern UI with gradients and cards)
 * JavaScript (Vanilla JS)
 * Local Storage for data persistence
+
 
