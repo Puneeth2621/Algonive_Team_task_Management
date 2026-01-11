@@ -1,7 +1,7 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 
 body{
-  background:linear-gradient(120deg,#00ff84,#597c31,#3321a8);
+  background:linear-gradient(120deg,#00ff84,#b950c7,#b950c7);
   color:#fff;
 }
 
@@ -16,7 +16,7 @@ body{
   width:360px;
   padding:40px;
   backdrop-filter:blur(15px);
-  background:rgba(222, 23, 23, 0.729);
+  background:rgba(0, 247, 255, 0.729);
   border-radius:20px;
   text-align:center;
 }
@@ -38,11 +38,11 @@ body{
   background:#3216e2;
   border:none;
   border-radius:10px;
-  font-weight:700;
+  font-weight:800;
 }
 
 .auth-box p{
-  margin-top:15px;
+  margin: top 16px;px;
   cursor:pointer;
   color:#0048ff;
 }
